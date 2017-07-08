@@ -1,0 +1,28 @@
+{% extends "emelem/basic.html" %}
+
+
+{% block head_js %}
+  {{ super() }}
+  {% with filename="welcome" %}
+    {% include "emelem/partials/_script_tag.html" %}
+  {% endwith %}
+{% endblock %}
+{% block title %}{{ _("Import") }}{% endblock %}
+{% block body %}
+    {% include "emelem/flash_wrapper.html" %}
+    <div class="container">
+        <title>Import a machine learning model.</title>
+        <h1>Import a machine learning model.</h1>
+        <form method=post enctype=multipart/form-data>
+          <input
+            type="hidden"
+            name="csrf_token"
+            id="csrf_token"
+            value="{{ csrf_token() if csrf_token else '' }}"
+          >
+          <p><input type=file name=file>
+             <input type=submit value=Upload>
+          </p>
+        </form>
+    </div>
+{% endblock %}

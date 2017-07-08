@@ -1,0 +1,8 @@
+recursive-include emelem/templates *
+recursive-include emelem/static *
+recursive-exclude emelem/static/assets/node_modules *
+recursive-include emelem/static/assets/node_modules/font-awesome *
+recursive-exclude tests *
+recursive-include emelem/data *
+recursive-include emelem/migrations *
+

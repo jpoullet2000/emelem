@@ -1,0 +1,8 @@
+{% extends "emelem/basic.html" %}
+
+{% block tail_js %}
+  {{ super() }}
+  {% with filename="profile" %}
+    {% include "emelem/partials/_script_tag.html" %}
+  {% endwith %}
+{% endblock %}
