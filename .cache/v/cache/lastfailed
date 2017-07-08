@@ -1,4 +1,0 @@
-{
-  "tests/base_tests.py::EmelemTestCase::test_login": true, 
-  "tests/base_tests.py::EmelemTestCase::test_model_explore_json": true
-}

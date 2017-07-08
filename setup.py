@@ -17,8 +17,8 @@ def get_git_sha():
     except:
         return ""
 
-#GIT_SHA = get_git_sha()
-GIT_SHA = 'frefreonnrfoernfr'
+GIT_SHA = get_git_sha()
+#GIT_SHA = 'frefreonnrfoernfr'
 version_info = {
     'GIT_SHA': GIT_SHA,
     'version': version_string,
